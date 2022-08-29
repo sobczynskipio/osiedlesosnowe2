@@ -1,10 +1,3 @@
-/**
-* Template Name: Maundy - v4.7.0
-* Template URL: https://bootstrapmade.com/maundy-free-coming-soon-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -94,7 +87,7 @@ h6 {
 #header {
   position: relative;
   width: 100%;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   /* countdown */
 }
 

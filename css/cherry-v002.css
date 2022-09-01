@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+
+::-webkit-scrollbar {
+    width: 10px;
+	height: 100px;
+
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+      background-color: #626262;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+	border-radius: 10px;
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+@media all and (max-width: 1215px) {
+    .fb {display:none;}
+}
+
+.newCol{
+    margin-right: 0px!important;
+    margin-top: 20px!important;
+    height: 500px!important;
+}
+
+h4{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 100;
+    color: #abaaa4 !important;
+    font-size: 27px;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #FFD700;
+}
+
+h6{
+    font-size: 20px;
+    font-weight: 100; 
+    
+}
+
+polygon{
+    cursor:pointer;
+}
+
+.scetch-download{
+    text-align:center;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.firstParagraphP{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.nextParagraphP{
+    margin-bottom: 0px;
+    font-size: 15px;
+        text-align: center;
+}
+
+.lastParagraphP{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.lastParagraphAbout{
+    margin-top: 60px;
+}
+
+.lastParagraphAbout2{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.firstParagraphContact{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.fb{
+	margin-left: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.fb a{
+	font-size: 40px;
+	color: #3b5998 ;
+}
+
+.arrow a{
+    font-size: 40px;
+	color: #3b5998 ;
+}
+
+.fb:hover{
+    -webkit-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	transform:scale(1.2);
+}
+
+.fbAbout{
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.fbAbout:hover{
+    -webkit-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	transform:scale(1.2);
+}
+
+.fbAbout a{
+    font-size: 60px;
+    color: #3b5998;
+}
+
+div.footersIcons{
+    font-size: 40px;
+    text-align: center;   
+}
+
+div.footersIcons i{
+    color:black !important;
+}
+
+div.contactsIcons i{
+
+    font-size: 40px;
+    color:black;
+}
+
+.sliderPhoto{
+	margin-top: 40px;
+	margin-bottom: 0px;
+}
+
+@font-face{
+	font-family: 'CherryFont';
+	src:url('../vendor/font-awesome/fonts/Segoe Script.ttf');
+}
+
+#logoShrink{
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #FFD700;
+	display: none;
+}
+
+.copyright{
+	color: white;
+    margin-top: 10px;
+}
+
+.portfolio-link:hover{
+    opacity: 0.8;
+    -webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+.linia{
+    margin-top: 20px;
+    background-color: #006400;
+    height: 1px;
+}
+
+.short{
+    width: 50%; 
+    margin: auto;
+    margin-top: 100px;
+}
+
+footer{
+    background-color: #070707;
+    color: white;
+    /* background-image: url(../img/xv.png); */
+}
+
+.cherryColor{
+     color: #8f791f;
+}
+
+.anim{
+
+}
+
+.contact2{
+    text-align: justify;
+}
+
+.vertical-center-4{
+    display:none;
+}
+
+#logoOgrody{
+    text-align: center;
+    transition: all .2s ease-in-out;
+   margin-bottom: 40px;
+}
+
+#logoOgrody:hover{
+    transform: scale(1.1);
+}
+
+.slider {
+    width: 100%;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+p.justyfied{
+   text-align: justify;
+}
+
+#HOUSE_DESCR{
+    background-color: white;
+    padding: 0px 10px 3px 10px;
+    width: 270px;
+    border: 4px solid #FFD700;
+    display: none;
+    font-size:12px;
+    text-align: left;}
+    #HOUSE_DESCR p{
+       line-height: 0.1;
+    }
+
+#WAITING{
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border: 4px solid #FFD700;
+    display: none;
+    font-size:26px;}
+    #WAITING p{
+       line-height: 1;
+}
+
+.interiorDetails {
+   text-align: center;
+   font-size: 30px;
+   margin-top: 30px;
+   font-weight: bold; 
+   cursor: pointer;
+   transition: all .2s ease-in-out;
+   height:50px;
+}
+
+.interiorDetails:hover{
+   font-size: 35px;
+}
+
+#INTERIOR_DETAILS_CONTENT ul li{
+    color:#555;
+}
+
+#INTERIOR_DETAILS_CONTENT ul li.first-level{
+    margin-top:10px;
+}
+
+.interiorBuildingHeader{
+font-weight:bold;
+}
+
+#ikonaStandardy {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 35px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}

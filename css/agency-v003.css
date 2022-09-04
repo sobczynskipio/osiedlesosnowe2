@@ -129,13 +129,13 @@ body {
     }
 
     section#about {
-        background-image: url(../img/sosna.png);
+        background-image: url(../img/sosny2.jpg);
     }
 }
 
 @media (min-width: 992px) {
   section#about {
-    background-image: url(../img/sosna.png);
+    background-image: url(../img/sosny2.jpg);
 }
 
   /* section#mieszkania {

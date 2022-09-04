@@ -123,7 +123,7 @@ $( document ).ready(function() {
       $("#mainNav").removeClass("navbar-shrink");
 		$("#logoHeader").css("display","block");
 		$("#logoShrink").css("display","none");
-		$(".fa, .fa-facebook-square").css("color","#3b5998");	
+		$(".fa, .fa-facebook-square").css("color","white");	
     }
   };
   // Collapse the navbar when page is scrolled

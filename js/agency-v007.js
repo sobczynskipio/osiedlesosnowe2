@@ -136,7 +136,7 @@ $("#svg0").click(function(e){
     var xPos = e.pageX - elm.offset().left;
     var yPos = e.pageY - elm.offset().top;
 
-    console.log(2*xPos, 2*yPos);
+    console.log(Math.round(2*xPos), Math.round(2*yPos));
 });
 
    $('#ikonaStandardy').click(toggleInteriorContent)

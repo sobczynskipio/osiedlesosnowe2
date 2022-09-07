@@ -8,7 +8,7 @@
 } /* this targets the default scrollbar (compulsory) */
 
 ::-webkit-scrollbar-track {
-      background-color: #626262;
+      background-color: #6s6262;
 } /* the new scrollbar will have a flat appearance with the set background color */
 
 ::-webkit-scrollbar-thumb {
@@ -309,4 +309,15 @@ font-weight:bold;
     font-size: 35px;
     cursor: pointer;
     margin-bottom: 25px;
+}
+
+.firstInfoInside{
+    /* background-image: url(../img/tlo1.png);  */
+    text-align: center;
+    padding: 20px;
+    color: wheat;
+}
+
+.firstInfo{
+    /* background-image: url(../img/tlo1.png); */
 }

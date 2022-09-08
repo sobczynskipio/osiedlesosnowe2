@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="S">
+    <meta name="author" content="Sopelsoft">
 
     <title>Dom pod miastem w cenie mieszkania: Łódź |Osiedle Sosnowe 2</title>
     
@@ -102,6 +102,7 @@
           <div class="slides">
             <a data-ma5-dot-hover="#8f791f" data-ma5-dot-active="#af9c3a"><img src="img/slider/osiedleBanner.png" alt=""></a>
             <a data-ma5-dot-hover="#8f791f" data-ma5-dot-active="#af9c3a"><img src="img/slider/dom1.jpg" alt=""></a>
+            <a data-ma5-dot-hover="#8f791f" data-ma5-dot-active="#af9c3a"><img src="img/slider/logoBanner.png" alt=""></a>
           </div>
         </div>
           <div class="col-lg-12 text-center">
@@ -151,35 +152,47 @@
 
         <image id="svg0"xlink:href="img/areamap.jpg" width="2200" height="1239"></image>
 
-        <polygon id="place1" class="place placeBooked" onClick="showHouseProjection('bud_6.pdf')" points="57 753, 401 629, 509 681, 173 867">100;210;500 000;booked</polygon>
-        <foreignobject class="node" x="890" y="350" width="420" height="400">
-            <div id="HOUSE_DESCR">
-                <p>Pow. mieszkania: <b><span id="FLAT_AREA"></span> m kw.</b></p>
-                <p>Pow. działki: <b><span id="ALL_AREA"></span> m kw.</b></p>
-                <p id="PRICE_PARAGRAPH"><span class="promotion" style="color:red"></span>Cena: <b><span id="ALL_PRICE"></span> zł</b></p>
+        <polygon id="place1" class="place placeBooked" onClick="showHouseProjection('bud_6.pdf')" points="57 753, 401 629, 509 681, 173 867">100;210;500 000;booked</polygon>       
+        <foreignobject id="HOUSE_DESCR_FOREIGNOBJECT" class="node" x="700" y="0" width="270" height="103">
+          <div id="HOUSE_DESCR">
+              <div>Pow. mieszkania: <b><span id="FLAT_AREA" style="margin-left: 60px;"></span> m kw.</b></div>
+              <div>Pow. działki: <b><span id="ALL_AREA" style="margin-left: 87px;"></span> m kw.</b></div>
+              <div id="PRICE_PARAGRAPH">
+                  <span>Cena: </span>
+                  <b><span style="margin-left: 127px;" id="ALL_PRICE"></span></b>
+              </div>
+              <div id="TERM_P">Termin realizacji:
+                  <span><b><span style="margin-left: 60px;" id="TERM"></span></b></span>
+              </div>
+              <div>Status: <b><span style="margin-left: 120px;" id="ALL_STATUS">dostępne</span></b></div>
+             <!--
+             <p>Pow. mieszkania: <b><span id="FLAT_AREA"></span> m kw.</b></p>
+              <p>Pow. działki: <b><span id="ALL_AREA"></span> m kw.</b></p>
+              <p id="PRICE_PARAGRAPH"><span class="promotion" style="color:red"></span>Cena: <b><span id="ALL_PRICE"></span> zł</b></p>
+              <p id="TERM_P">Termin realizacji: <b><span id="TERM">I - II kw. 2022</span></b></p>
+              <p>Status: <b><span id="ALL_STATUS">dostępne</span></b></p>-->
+              <!--
+                              <table class="promotion" style="margin-bottom:10px;">
+                                <tr>_Apromotion" style="margin-bottom:10px;">
+                                  <tr>_Amargin-bottom:10px;">
+                                    <tr>_A
+                                      <td><span style="color:red">Było: </span><span id="ALL_PRICE_BEFORE" style="text-decoration: line-through;"></span> zł</td><td rowspan="2"><img src="img/autumn_leave_edited.gif" class="promotion" style="margin-left: 40px; width: 150px;" ></td>
+                                  </tr>
+                                  <tr>
+                                      <td><span style="color:red">Jest: </span><span id="ALL_PRICE_NOW"></span> zł</td>
+                                  </tr>
+                              </table>
 
-                <table class="promotion" style="margin-bottom:10px;">
-                    <tr>
-                        <td><span style="color:red">Było: </span><span id="ALL_PRICE_BEFORE" style="text-decoration: line-through;"></span> zł</td><td rowspan="2"><img src="img/autumn_leave_edited.gif" class="promotion" style="margin-left: 40px; width: 150px;" ></td>
-                    </tr>
-                    <tr>
-                        <td><span style="color:red">Jest: </span><span id="ALL_PRICE_NOW"></span> zł</td>
-                    </tr>
-                </table>
-
-                <p>Status: <b><span id="ALL_STATUS"></span></b></p>
-                <p id="TERM_P">Termin realizacji: <b><span id="TERM"></span></b></p>
-            </div>
-            <div id="WAITING">
-                II etap inwestycji - informacje wkrótce
-            </div>
+                              <p>Status: <b><span id="ALL_STATUS"></span></b></p>
+                              <p id="TERM_P">Termin realizacji: <b><span id="TERM"></span></b></p>-->
+          </div>
         </foreignobject>
     </svg>
     </div>
 
         <!-- <svg id="svgHouses" viewBox="0 0 2200 1200">
           <image id="svg0"xlink:href="img/areamap.jpg" height="1200" width="2200"></image>
-          <polygon id="place1" class="place placeFree" onClick="showHouseProjection('SOSNOWE_ KARTA_1D')" points="106 750, 444 582, 564 720, 282 896">82,28;120;509 000;free;III kw. 2024</polygon>
+          <polygon id="cce1" class="place eee" onClick="showHouseProjection('SOSNOWE_ KARTA_1D')" points="106 750, 444 582, 564 720, 282 896">82,28;120;509 000;free;III kw. 2024</polygon>
           <polygon id="place1" class="place placeFree" onClick="showHouseProjection('SOSNOWE_ KARTA_1D')" points="200 920, 500 920, 500 1000, 200 1000">82,28;120;509 000;free;III kw. 2024</polygon>
 
           <foreignobject id="HOUSE_DESCR_FOREIGNOBJECT" class="node" x="700" y="0" width="270" height="103">
@@ -420,7 +433,7 @@
 
     <!-- Lokalizacja -->
     <!-- <section id="lokalizacja" class="bg-light"> -->
-      <section id="lokalizacja" class="bg-light">
+      <section id="lokalizacja" style="background-color: #212529">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -668,6 +681,7 @@
             <p class="nextParagraphP">NIP: 9820357941</p>     
             <p class="nextParagraphP"><a href="http://www.mieszkaniazogrodem.pl/" class="linkStrona"><b>www.mieszkaniaZogrodem.pl</b></a></p>
             <p class="nextParagraphP"><a href="http://osiedlewisniowe.pl/" class="linkStrona"><b>www.osiedleWisniowe.pl</b></a></p>
+            <p class="nextParagraphP"><a href="http://www.wiskitnopark.pl/" class="linkStrona"><b>www.wiskitnoPark.pl</b></a></p>
             <p class="nextParagraphP">tel. 691-983-666</p>
             <p class="nextParagraphP"><a href="mailto:paulina.kusmierczyk@gmail.com?Subject=Zapytanie%20ze%20strony%20www" target="_top">paulina.kusmierczyk@gmail.com</a></p>
            </div>
@@ -685,7 +699,7 @@
         <div class="row">
             <div class="col-lg-3 text-center"></div>
             <div class="col-lg-6 text-center">
-                <span class="copyright">Copyright &copy; PB Developer 2020</span>
+                <span class="copyright">Copyright &copy; PB Developer 2022</span>
             </div>
             <div class="col-lg-3 text-center">
                    <div class="arrow">

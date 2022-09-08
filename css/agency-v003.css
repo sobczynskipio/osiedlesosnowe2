@@ -52,7 +52,8 @@ section {
     font-style: italic;
     margin-bottom: 60px;
     text-transform: none;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    /* font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;  */
+  }
 
 @media (min-width: 768px) {
   section {

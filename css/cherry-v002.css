@@ -96,7 +96,7 @@ polygon{
 }
 
 .fb{
-	margin-left: 100px;
+	margin-left: 50px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -145,6 +145,10 @@ div.contactsIcons i{
 
     font-size: 40px;
     color:black;
+}
+
+.green{
+    color: #0d610c
 }
 
 .sliderPhoto{

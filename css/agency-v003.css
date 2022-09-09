@@ -130,13 +130,13 @@ body {
     }
 
     section#about {
-        background-image: url(../img/sosny2.jpg);
+        background-image: url(../img/tlo_about.png);
     }
 }
 
 @media (min-width: 992px) {
   section#about {
-    background-image: url(../img/sosny2.jpg);
+    background-image: url(../img/tlo_about.png);
 }
 
   /* section#mieszkania {

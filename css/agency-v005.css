@@ -99,9 +99,9 @@ body {
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: white;
+    color: black;
     border: 0;
-    background-color: #FFD700;
+    background-color: #febc58;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
     color: #fed136;
@@ -130,17 +130,17 @@ body {
     }
 
     section#about {
-        background-image: url(../img/tlo_about.png);
+        /*background-image: url(../img/tlo_about.png);*/
     }
 }
 
 @media (min-width: 992px) {
   section#about {
-    background-image: url(../img/tlo_about.png);
+    /*background-image: url(../img/tlo_about.png);*/
 }
 
   section#mieszkania {
-    background-image: url(../img/tlo_mieszkania.png);
+    /*background-image: url(../img/tlo_mieszkania.png);*/
 }
 
   #mainNav {

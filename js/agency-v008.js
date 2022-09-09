@@ -114,16 +114,24 @@ $( document ).ready(function() {
   // Collapse Navbar
   var navbarCollapse = function() {
 
+      if(window.innerWidth > 992){
+          $("#osiedle_lg").css("display", "block")
+          $("#osiedle_sm").css("display", "none")
+      }else{
+          $("#osiedle_lg").css("display", "none")
+          $("#osiedle_sm").css("display", "block")
+      }
+
     if ($("#mainNav").offset().top > 100 || window.innerWidth < 992) {
       	$("#mainNav").addClass("navbar-shrink");
 		$("#logoHeader").css("display","none");
 		$("#logoShrink").css("display","block");
-		$(".fa, .fa-facebook-square").css("color","white");		
+		$(".fa, .fa-facebook-square").css("color","white");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
 		$("#logoHeader").css("display","block");
 		$("#logoShrink").css("display","none");
-		$(".fa, .fa-facebook-square").css("color","white");	
+		$(".fa, .fa-facebook-square").css("color","white");
     }
   };
   // Collapse the navbar when page is scrolled

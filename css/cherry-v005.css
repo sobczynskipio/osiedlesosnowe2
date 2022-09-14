@@ -332,5 +332,26 @@ font-weight:bold;
     /* background-image: url(../img/tlo1.png); */
 }
 
+.full-overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 1000%;
+    background-color: black;
+    z-index:10001;
+    -moz-opacity: 0.6;
+    opacity:.60;
+    filter: alpha(opacity=60);
+    overflow-y: hidden;
+}
 
+.full-overlay-image{
+    position: absolute;
+    display: block;
+    left:25%;
+    width: 50%;
+    z-index:10002;
+    background: transparent;
+}
 

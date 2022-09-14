@@ -114,10 +114,16 @@ $( document ).ready(function() {
   // Collapse Navbar
   var navbarCollapse = function() {
 
+      $(".full-overlay-image").css("margin-top", ($("#mainNav").offset().top + 180) + "px")
+
       if(window.innerWidth > 992){
+          $(".full-overlay-image").css("width", "50%")
+          $(".full-overlay-image").css("left", "25%")
           $("#osiedle_lg").css("display", "block")
           $("#osiedle_sm").css("display", "none")
       }else{
+          $(".full-overlay-image").css("width", "80%")
+          $(".full-overlay-image").css("left", "10%")
           $("#osiedle_lg").css("display", "none")
           $("#osiedle_sm").css("display", "block")
       }
@@ -207,6 +213,11 @@ function showHouseProjection(projectionFile){
 function dismissModal(){
        $('.vertical-center-4').hide();
        $('.vertical-center-4').slick('unslick');
+}
+
+function closePresalePopup(){
+    $('.full-overlay').hide();
+    $('.full-overlay-image').hide();
 }
 
 

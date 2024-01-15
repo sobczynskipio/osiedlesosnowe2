@@ -75,10 +75,10 @@
             <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
+            <ul class="navbar-nav text-uppercase ml-auto" style="font-size: 17px;" >
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#mieszkania"
-                       style="margin-top: 0px; color: white; font-size: 17px; margin-right: 5px">Mieszkania</a>
+                       style="margin-top: 0px; color: white; margin-right: 5px">Mieszkania</a>
                 </li>
 <!--                <li class="nav-item">-->
 <!--                    <a class="nav-link js-scroll-trigger" href="#finansowanie"-->
@@ -90,23 +90,23 @@
 <!--                </li>-->
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about"
-                       style="margin-top: 0px; color: white; font-size: 17px">O&nbspnas</a>
+                       style="margin-top: 0px; color: white;">O&nbspnas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#osiedle"
-                       style="margin-top: 0px; color: white; font-size: 17px; margin-right: 5px">Osiedle</a>
+                       style="margin-top: 0px; color: white; margin-right: 5px">Osiedle</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#lokalizacja"
-                       style="margin-top: 0px; color: white; font-size: 17px; margin-right: 5px">Lokalizacja</a>
+                       style="margin-top: 0px; color: white; margin-right: 5px">Lokalizacja</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio"
-                       style="margin-top: 0px; color: white; font-size: 17px; margin-right: 5px">Galeria</a>
+                       style="margin-top: 0px; color: white; margin-right: 5px">Galeria</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact"
-                       style="margin-top: 0px; color: white; font-size: 17px">Kontakt</a>
+                       style="margin-top: 0px; color: white;">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -195,39 +195,46 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 id="DOSTEPNOSC_MIESZKAN" class="section-heading text-uppercase block animatable bounceIn">Dostępność
-                    mieszkań</h2>
-                <h3 class="section-subheading" style="line-height: 30px">
-                    Przesuń kursor na mieszkanie, aby uzyskać więcej informacji.<br>
-                    Kliknij mieszkanie, aby zobaczyć rzuty z projektu.
-                </h3>
+                <h2 id="DOSTEPNOSC_MIESZKAN" class="section-heading text-uppercase block animatable bounceIn">Dostępność mieszkań</h2>
             </div>
         </div>
-        <svg viewBox="0 0 2200 1239">
+        <row>
+            <div class="col-lg-12" style="margin-bottom: 50px;">
+                <p class="justified">Aktualnie w sprzedaży mamy <b class="green">I etap inwestycji</b>, na który składać się będzie <b>5 budynków czterorodzinnych</b> z następujący mieszkaniami: <ul><li>Lokal mieszkalny ok 52m<sup>2</sup> na parterze z działką ok. 50m<sup>2</sup> w cenie 399 tys zł</li></ul><ul><li>Lokal mieszkalny ok 52m<sup>2</sup>  na piętrze, działka ok 120m<sup>2</sup> w cenie 399 tys zł.</li></ul><div style="margin-top: 30px; text-decoration: underline"></div></p>
+            </div>
+            <div class="col-lg-12 text-center">
+                <span style="text-decoration: underline">Do każdego mieszkania miejsce postojowe gratis!</span>
+            <h3 class="section-subheading" style="line-height: 30px; margin-top: 40px">
+                Przesuń kursor na mieszkanie, aby uzyskać więcej informacji.<br>
+                Kliknij mieszkanie, aby zobaczyć rzuty z projektu.
+            </h3>
+            </div>
+        </row>
+        <!--<svg viewBox="0 0 2200 1239">
 
             <image id="svg0" xlink:href="img/areamap.jpg" width="2200" height="1239"></image>
 
-            <!-- BUD 1 --><!--counter-clockwise-->
+            &lt;!&ndash; BUD 1 &ndash;&gt;&lt;!&ndash;counter-clockwise&ndash;&gt;
             <polygon id="place1" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1D.pdf')" points="42 740, 422 612, 531 699, 253 951">81,7;120;549 000;free</polygon>
             <polygon id="place2" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1A.pdf')" points="253 951, 531 699, 711 1017, 478 1137">81,7;120;549 000;free</polygon>
             <polygon id="place3" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1B.pdf')" points="531 699, 669 683, 951 899, 711 1017">81,7;120;549 000;free</polygon>
             <polygon id="place4" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1C.pdf')" points="422 612, 517 578, 669 683, 531 699">81,7;120;549 000;free</polygon>
-            <!-- BUD 2 -->
+            &lt;!&ndash; BUD 2 &ndash;&gt;
             <polygon id="place5" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1D.pdf')" points="517 578, 848 463, 970 534, 737 733">81,7;120;549 000;free</polygon>
             <polygon id="place6" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1A.pdf')" points="737 733, 970 534, 1151 799, 951 899">81,7;120;549 000;free</polygon>
             <polygon id="place7" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1B.pdf')" points="970 534, 1095 535, 1340 698, 1151 799">81,7;120;549 000;free</polygon>
             <polygon id="place8" class="place placeFree" onClick="showHouseProjection('SOSNOWE_KARTA_1C.pdf')" points="848 463, 908 442, 1095 535, 970 534">81,7;120;549 000;free</polygon>
-            <!-- BUD 3 --><!--clockwise-->
+            &lt;!&ndash; BUD 3 &ndash;&gt;&lt;!&ndash;clockwise&ndash;&gt;
             <polygon id="place9" class="place placeFree" points="908 442, 1243 347, 1353 389, 1167 575">81,7;120;549 000;free</polygon>
             <polygon id="place10" class="place placeFree" points="1243 347, 1352 317, 1457 363, 1353 389">81,7;120;549 000;free</polygon>
             <polygon id="place11" class="place placeFree" points="1353 389, 1457 363, 1675 513, 1491 610">81,7;120;549 000;free</polygon>
             <polygon id="place12" class="place placeFree" points="1167 575, 1353 389, 1491 610, 1340 698">81,7;120;549 000;free</polygon>
-            <!-- BUD 4 -->
+            &lt;!&ndash; BUD 4 &ndash;&gt;
             <polygon id="place13" class="place placeFree" points="1352 317, 1594 229, 1656 241, 1540 415">81,7;120;549 000;free</polygon>
             <polygon id="place14" class="place placeFree" points="1594 229, 1670 200, 1777 237, 1656 241">81,7;120;549 000;free</polygon>
             <polygon id="place15" class="place placeFree" points="1656 241, 1777 237, 1997 353, 1835 437">81,7;120;549 000;free</polygon>
             <polygon id="place16" class="place placeFree" points="1540 415, 1656 241, 1835 437, 1675 513">81,7;120;549 000;free</polygon>
-            <!-- BUD 5 -->
+            &lt;!&ndash; BUD 5 &ndash;&gt;
             <polygon id="place17" class="place placeFree" points="1670 200, 1885 121, 1934 145, 1840 263">81,7;120;549 000;free</polygon>
             <polygon id="place18" class="place placeFree" points="1885 121, 1947 100, 2036 127, 1934 145">81,7;120;549 000;free</polygon>
             <polygon id="place19" class="place placeFree" points="1934 145, 2036 127, 2218 200, 2085 313">81,7;120;549 000;free</polygon>
@@ -242,6 +249,31 @@
                     </div>
                     <div id="TERM_P">Termin realizacji:
                         <span><b><span style="margin-left: 58px;" id="TERM">III kw. 2024</span></b></span>
+                    </div>
+                    <div>Status: <b><span style="margin-left: 179px;" id="ALL_STATUS">dostępne</span></b></div>
+                </div>
+            </foreignobject>
+        </svg>-->
+        <svg viewBox="0 0 2000 1429">
+
+            <image id="svg0" xlink:href="img/1_jpg_2000_BARDZIEJ_ZIELONE.jpg" width="2000" height="1429"></image>
+
+            <polygon id="place1" class="place placeFree" onClick="showHouseProjection('pietro_left.jpg')" points="205 520, 400 325, 1260 530, 1260 785, 205 700">52;120;399 000;free</polygon>
+            <polygon id="place2" class="place placeFree" onClick="showHouseProjection('pietro_right.jpg')" points="1260 530, 1725 640, 1725 820, 1260 785">52;120;399 000;free</polygon>
+            <polygon id="place3" class="place placeFree" onClick="showHouseProjection('parter_right.jpg')" points="1260 785, 1725 820, 1725 1040, 1260 1085">52;50;399 000;free</polygon>
+            <polygon id="place4" class="place placeFree" onClick="showHouseProjection('parter_left.jpg')" points="205 700, 1260 785, 1260 1085, 205 1150">52;50;399 000;free</polygon>
+
+
+            <foreignobject id="HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="500" height="300">
+                <div id="HOUSE_DESCR">
+                    <div>Pow. mieszkania: <b><span id="FLAT_AREA" style="margin-left: 60px;"></span> m kw.</b></div>
+                    <div>Pow. działki: <b><span id="ALL_AREA" style="margin-left: 112px;"></span> m kw.</b></div>
+                    <div id="PRICE_PARAGRAPH">
+                        <span>Cena: </span>
+                        <b><span style="margin-left: 190px;" id="ALL_PRICE"></span></b>
+                    </div>
+                    <div id="TERM_P">Termin realizacji:
+                        <span><b><span style="margin-left: 58px;" id="TERM">III kw. 2025</span></b></span>
                     </div>
                     <div>Status: <b><span style="margin-left: 179px;" id="ALL_STATUS">dostępne</span></b></div>
                 </div>

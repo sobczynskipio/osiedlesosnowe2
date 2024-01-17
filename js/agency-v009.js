@@ -210,6 +210,10 @@ function showHouseProjection(projectionFile){
     window.open(window.location.href + "house_projections/"+projectionFile);
 }
 
+function showCatalog(projectionFile){
+    window.open(window.location.href + "catalogs/"+projectionFile);
+}
+
 function dismissModal(){
        $('.vertical-center-4').hide();
        $('.vertical-center-4').slick('unslick');

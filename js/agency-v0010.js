@@ -128,17 +128,17 @@ $( document ).ready(function() {
           $("#osiedle_sm").css("display", "block")
       }
 
-    if ($("#mainNav").offset().top > 100 || window.innerWidth < 992) {
+    /*if ($("#mainNav").offset().top > 100 || window.innerWidth < 992) {
       	$("#mainNav").addClass("navbar-shrink");
 		$("#logoHeader").css("display","none");
 		$("#logoShrink").css("display","block");
 		$(".fa, .fa-facebook-square").css("color","white");
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+        $("#mainNav").removeClass("navbar-shrink");
 		$("#logoHeader").css("display","block");
 		$("#logoShrink").css("display","none");
 		$(".fa, .fa-facebook-square").css("color","white");
-    }
+    }*/
   };
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);

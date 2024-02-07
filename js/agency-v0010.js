@@ -214,6 +214,14 @@ function showCatalog(projectionFile){
     window.open(window.location.href + "catalogs/"+projectionFile);
 }
 
+function selectHouse(houseNumber){
+    $('#svgTitle').html("BUDYNEK NR "+houseNumber);
+    //$('body').scrollTo('#svg1'); // Scroll screen to target element
+    $([document.documentElement, document.body]).animate({
+            scrollTop: $("#svg1").offset().top
+        }, 1000);
+}
+
 function dismissModal(){
        $('.vertical-center-4').hide();
        $('.vertical-center-4').slick('unslick');

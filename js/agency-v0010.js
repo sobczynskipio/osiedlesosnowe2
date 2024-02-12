@@ -147,10 +147,24 @@ $( document ).ready(function() {
    
 $("#svg0").click(function(e){
     var elm = $(this);
-    var xPos = e.pageX - elm.offset().left;
-    var yPos = e.pageY - elm.offset().top;
+//    var xPos = e.pageX - elm.offset().left;
+//    var yPos = e.pageY - elm.offset().top;
+//
+//    console.log(Math.round(2*xPos), Math.round(2*yPos));
 
-    console.log(Math.round(2*xPos), Math.round(2*yPos));
+
+//            pt.x = e.clientX;
+//            pt.y = e.clientY;
+//
+//            // The cursor point, translated into svg coordinates
+//            var cursorpt = pt.matrixTransform(svg.getScreenCTM().inverse());
+//            console.log("(" + cursorpt.x + ", " + cursorpt.y + ")");
+console.log(e)
+console.log(e.offsetX + " " + e.offsetY)
+console.log(e.pageX + " " + e.pageY)
+console.log(Math.round(e.pageX - e.offsetX) + " " + Math.round(e.pageY - e.offsetY))
+console.log(Math.round(e.screenX) + " " + Math.round(e.screenY))
+console.log(elm.offset().left);
 });
 
    $('#ikonaStandardy').click(toggleInteriorContent)

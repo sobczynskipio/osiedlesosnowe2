@@ -214,7 +214,9 @@
         <svg viewBox="0 0 2000 1429">
             <image id="svg0" xlink:href="img/rzut_osiedla.jpg" width="2000" height="1429"></image>
 
-            <polygon id="house3" class="place placeFree" onClick="selectHouse('3')" points="205 520, 400 325, 1260 530, 1260 785">52;120;399 000;free</polygon>
+            <polygon id="house1" class="place placeFree" onClick="selectHouse('1')" points="0 900, 200 850, 223 522, 69 587">52;120;399 000;free</polygon>
+            <polygon id="house2" class="place placeFree" onClick="selectHouse('1')" points="454 2780, 363 2316, 1260 530, 1260 785">52;120;399 000;free</polygon>
+<!--            <polygon id="house3" class="place placeFree" onClick="selectHouse('3')" points="205 520, 400 325, 1260 530, 1260 785">52;120;399 000;free</polygon>-->
 
 <!--            <foreignobject id="HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="500" height="300">-->
 <!--                <div id="HOUSE_DESCR">-->
@@ -1252,7 +1254,7 @@
 <script src="js/contact_me.js"></script>
 
 <script>
-    // var pt = document.getElementById("svgHouses").createSVGPoint();  // Created once for document
+    var pt = document.getElementById("svg0").createSVGPoint();  // Created once for document
 
     function alert_coords(evt) {
         pt.x = evt.clientX;

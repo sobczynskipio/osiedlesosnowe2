@@ -264,7 +264,7 @@ p.justyfied{
     display: none;
 }
 
-#HOUSE_DESCR{
+.house_descr{
     background-color: white;
     padding: 20px;
     width: 500px;
@@ -272,7 +272,7 @@ p.justyfied{
     display: none;
     font-size:24px;
     text-align: left;}
-    #HOUSE_DESCR p{
+    .house_descr p{
        line-height: 0.1;
     }
 

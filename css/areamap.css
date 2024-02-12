@@ -16,3 +16,7 @@
 .place:hover{
   opacity: 0.4;
 }
+
+.wholePlace:hover{
+  opacity: 0.4;
+}

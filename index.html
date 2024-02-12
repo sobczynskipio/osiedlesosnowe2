@@ -212,28 +212,23 @@
 
         <!--RZUT OSIEDLA-->
         <svg viewBox="0 0 2000 1429">
-            <image id="svg0" xlink:href="img/rzut_osiedla.jpg" width="2000" height="1429"></image>
+            <image id="svg0" xlink:href="img/rzut_osiedla1.jpg" width="2000" height="1429"></image>
 
-            <polygon id="house1" class="place placeFree" onClick="selectHouse('1')" points="0 900, 200 850, 223 522, 69 587">52;120;399 000;free</polygon>
-            <polygon id="house2" class="place placeFree" onClick="selectHouse('1')" points="454 2780, 363 2316, 1260 530, 1260 785">52;120;399 000;free</polygon>
-<!--            <polygon id="house3" class="place placeFree" onClick="selectHouse('3')" points="205 520, 400 325, 1260 530, 1260 785">52;120;399 000;free</polygon>-->
+            <polygon id="house01" class="wholePlace placeWaiting" points="45 900, 80 870, 265 808, 320 900, 320 970, 320 970, 130 1045, 65 975">UNAVAILABLE</polygon>
+            <polygon id="house01" class="wholePlace placeWaiting" points="500 750, 550 718, 685 673, 740 750, 740 815, 600 870, 510 815">UNAVAILABLE</polygon>
 
-<!--            <foreignobject id="HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="500" height="300">-->
-<!--                <div id="HOUSE_DESCR">-->
-<!--                    <div>Pow. mieszkania: <b><span id="FLAT_AREA" style="margin-left: 60px;"></span> m kw.</b></div>-->
-<!--                    <div>Pow. działki: <b><span id="ALL_AREA" style="margin-left: 112px;"></span> m kw.</b></div>-->
-<!--                    <div id="PRICE_PARAGRAPH">-->
-<!--                        <span>Cena: </span>-->
-<!--                        <b><span style="margin-left: 190px;" id="ALL_PRICE"></span></b>-->
-<!--                    </div>-->
-<!--                    <div id="TERM_P">Termin realizacji:-->
-<!--                        <span><b><span style="margin-left: 58px;" id="TERM">III kw. 2025</span></b></span>-->
-<!--                    </div>-->
-<!--                    <div>Status: <b><span style="margin-left: 179px;" id="ALL_STATUS">dostępne</span></b></div>-->
-<!--                </div>-->
-<!--            </foreignobject>-->
+            <polygon id="house1" class="wholePlace placeWaiting" onClick="selectHouse('1')" points="905 640, 1075 578, 1125 600, 1125 670, 970 732, 905 700">UNAVAILABLE</polygon>
+            <polygon id="house2" class="wholePlace placeFree" onClick="selectHouse('2')" points="1230 520, 1360 473, 1415 495, 1415 552, 1290 600, 1230 582">2;4</polygon>
+            <polygon id="house3" class="wholePlace placeFree" onClick="selectHouse('3')" points="1482 427, 1600 390, 1638 400, 1635 460, 1535 502, 1482 485">2;4</polygon>
+            <polygon id="house4" class="wholePlace placeFree" onClick="selectHouse('4')" points="1685 355, 1775 325, 1818 332, 1815 388, 1735 420, 1682 405">2;4</polygon>
+            <polygon id="house4" class="wholePlace placeFree" onClick="selectHouse('5')" points="1848 295, 1925 270, 1963 283, 1960 328, 1900 352, 1848 340">2;4</polygon>
+
+            <foreignobject id="WHOLE_HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="500" height="300">
+                <div id="WHOLE_HOUSE_DESCR" class="house_descr">
+                    <div>Wolne mieszkania: <b><span id="WHOLE_FREE" style="margin-left: 60px;"></span></b></div>
+                </div>
+            </foreignobject>
         </svg>
-
 
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -260,7 +255,7 @@
 
 
             <foreignobject id="HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="500" height="300">
-                <div id="HOUSE_DESCR">
+                <div id="HOUSE_DESCR" class="house_descr">
                     <div>Pow. mieszkania: <b><span id="FLAT_AREA" style="margin-left: 60px;"></span> m kw.</b></div>
                     <div>Pow. działki: <b><span id="ALL_AREA" style="margin-left: 112px;"></span> m kw.</b></div>
                     <div id="PRICE_PARAGRAPH">
@@ -884,26 +879,6 @@
     </div>
 </section>
 
-<!-- Lokalizacja -->
-<!--<section id="lokalizacja" style="background-color: #212529; padding-bottom: 0px;">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12 text-center">-->
-<!--                <h2 class="section-heading text-uppercase block animatable bounceIn">Lokalizacja</h2>-->
-<!--                <h3 class="section-subheading" style="color: white">Nowe <b class="cherryColor">Osiedle Sosnowe 2</b> to-->
-<!--                    idealna lokalizacja dla Twojego nowego domu.</h3>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    <div class="row">-->
-<!--        <div class="col-lg-12">-->
-<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.2121519736993!2d19.5952!3d51.7099999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a3291bc625a3d%3A0xd4ec67fbabe19134!2zS29sdW1ueSA1NzIsIDkzLTY0OSDFgcOzZMW6!5e1!3m2!1spl!2spl!4v1662628744079!5m2!1spl!2spl"-->
-<!--                    width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"-->
-<!--                    tabindex="0"></iframe>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    </div>-->
-<!--</section>-->
-
 <!-- Galeria -->
 <section id="portfolio">
     <div class="container">
@@ -914,173 +889,6 @@
                     Zdjęcia już wkrótce</h3>
             </div>
         </div>
-        <!--<div class="row">
-             <h3 class="section-subheading" style="line-height: 30px">
-              Zdjęcia już wkrótce</h3> -->
-        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-           <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(1)">
-               <img class="img-fluid" src="img/portfolio/small/nowy_rzut_small.jpg" alt="">
-           </a>
-           <div class="portfolio-caption">
-               <h4>Osiedle</h4>
-               <p class="text-muted"></p>
-           </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-           <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(2)">
-               <img class="img-fluid" src="img/portfolio/small/CoronaCamera008_1_-2_small.jpg" alt="">
-           </a>
-           <div class="portfolio-caption">
-               <h4>Mieszkanie 103,28 m<sup>2</sup> (strona zachodnia)</h4>
-               <p class="text-muted"></p>
-           </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-           <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(3)">
-               <img class="img-fluid" src="img/portfolio/small/9_small.jpg" alt="" style="height: 263px; max-width: 350px">
-           </a>
-           <div class="portfolio-caption">
-               <h4>Dom dwurodzinny</h4>
-               <p class="text-muted"></p>
-           </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-           <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(4)">
-               <img class="img-fluid" src="img/portfolio/small/Camera002_small.png" alt="">
-           </a>
-           <div class="portfolio-caption">
-               <h4>Mieszkanie 103,28 m<sup>2</sup> parter</h4>
-               <p class="text-muted"></p>
-           </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-           <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(5)">
-               <img class="img-fluid" src="img/portfolio/small/Camera001_small.png" alt="">
-           </a>
-           <div class="portfolio-caption">
-               <h4>Mieszkanie 103,28 m<sup>2</sup> piętro</h4>
-               <p class="text-muted"></p>
-           </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-           <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(6)">
-               <img class="img-fluid" src="img/portfolio/small/Camera003_small.png" alt="" style="height: 263px; max-width: 350px">
-           </a>
-           <div class="portfolio-caption">
-               <h4>Mieszkanie 91,38 m<sup>2</sup> parter</h4>
-               <p class="text-muted"></p>
-           </div>
-       </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(7)">
-            <img class="img-fluid" src="img/portfolio/small/Camera004_small.png" alt="" style="height: 262px;">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Mieszkanie 91,38 m<sup>2</sup> piętro</h4>
-            <p class="text-muted"></p>
-          </div>
-        </div> -->
-        <!--</div>-->
-
-        <!-- <div class="row">
-         <div class="col-lg-12 text-center">
-           <h2 class="section-heading text-uppercase block animatable bounceIn">Poprzednie realizacje - Osiedle Wiśniowe</h2>
-         </div>
-       </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(8)">
-                    <img class="img-fluid" src="img/portfolio/wisniowe_gallery/image1_small.JPG" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Osiedle</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(9)">
-                    <img class="img-fluid" src="img/portfolio/wisniowe_gallery/image2_small.JPG" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Dom w zabudowie bliźniaczej</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(10)">
-                    <img class="img-fluid" src="img/portfolio/wisniowe_gallery/image3_small.JPG" alt="" style="height: 263px; max-width: 350px">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Dom w zabudowie szeregowej</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(11)">
-                    <img class="img-fluid" src="img/portfolio/wisniowe_gallery/image4_small.JPG" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Osiedle</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(12)">
-                    <img class="img-fluid" src="img/portfolio/wisniowe_gallery/image5_small.JPG" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Osiedle</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-         <div class="col-lg-12 text-center">
-           <h2 class="section-heading text-uppercase block animatable bounceIn">Poprzednie realizacje - Osiedle Sosnowe</h2>
-         </div>
-       </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(13)">
-                    <img class="img-fluid" src="img/portfolio/sosnowe_gallery/DSC1_small.jpg" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Osiedle</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(14)">
-                    <img class="img-fluid" src="img/portfolio/sosnowe_gallery/DSC2_small.jpg" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Dom w zabudowie bliźniaczej</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(15)">
-                    <img class="img-fluid" src="img/portfolio/sosnowe_gallery/DSC3_small.jpg" alt="" style="height: 263px; max-width: 350px">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Dom w zabudowie bliźniaczej</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link portfolio-link-gallery" data-toggle="modal" onclick="initializeModal(16)">
-                    <img class="img-fluid" src="img/portfolio/sosnowe_gallery/DSC4_small.jpg" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Osiedle</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-        </div>
-
--->
     </div>
 </section>
 

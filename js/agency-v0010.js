@@ -5,11 +5,28 @@ $( document ).ready(function() {
     }
     initializeSchemaImages();
 
+    $(".wholePlace").hover(
+        function() {
+            $('#WHOLE_HOUSE_DESCR').css("display","block");
+            let house_info = $( this ).html().split(";");
+            if(house_info.length < 2){
+                $(".house_descr").css("width", "600px")
+                $("#WHOLE_HOUSE_DESCR_FOREIGNOBJECT").css("width", "600px")
+                $('#WHOLE_FREE').html("Informacje wkrótce");
+            }else {
+                $(".house_descr").css("width", "400px")
+                $("#WHOLE_HOUSE_DESCR_FOREIGNOBJECT").css("width", "500px")
+                $('#WHOLE_FREE').html(house_info[0] + "/" + house_info[1]);
+            }
+        },
+        function() {
+            $('#WHOLE_HOUSE_DESCR').css("display","none");
+        }
+    );
+
     $(".place").hover(
         function() {
-          if($( this ).html() == "waiting"){
-             $('#WAITING').css("display","block");
-          }else{
+             $(".house_descr").css("width", "500px")
              $('#HOUSE_DESCR').css("display","block");
              let house_info = $( this ).html().split(";");
              $('#FLAT_AREA').html(house_info[0]);
@@ -27,55 +44,9 @@ $( document ).ready(function() {
               }
 
               $('#TERM').html(house_info[4])
-
-             /*if(house_info[1]){
-                $('#ALL_AREA').parent().parent().css("display","block");
-
-             }else
-             {
-                $('#ALL_AREA').parent().parent().css("display","none");
-             }
-
-             $('#ALL_PRICE').html(house_info[2]);
-             if(house_info[3]!='free'){
-                $('#PRICE_PARAGRAPH').hide();
-                $('#ALL_STATUS').html('sprzedano');
-             }else{
-                $('#PRICE_PARAGRAPH').show();
-                $('#ALL_STATUS').html('dostępne')
-             }
-
-             if(house_info[4] == 'promotion'){
-                $('.promotion').show();
-                $('#HOUSE_DESCR').css("background-color", "#FEFEEB");
-                $('#ALL_PRICE_BEFORE').html(house_info[2]);
-                $('#ALL_PRICE_NOW').html(house_info[5]);
-                $('#PRICE_PARAGRAPH').hide();
-             }else{
-                $('.promotion').hide();
-                $('#HOUSE_DESCR').css("background-color", "white");
-             }
-
-             if(house_info[4] == "2020" || house_info[4] == "2021"){
-                $('#TERM_P').css("display","block");
-                if(house_info[4] == "2020"){
-                    $('#TERM').html("XII 2020");
-                }else{
-                    $('#TERM').html("I kw. 2021 r.");
-                }
-
-             }else{
-                $('#TERM_P').css("display","none");
-             }*/
-          }
         },
         function() {
-           if($( this ).html() == "waiting"){
-               $('#WAITING').css("display","none");
-           }else{
-               $('#HOUSE_DESCR').css("display","none");
-           }
-            $('#PROMO_INFO_ID').css("visibility","hidden")
+            $('#HOUSE_DESCR').css("display","none");
         }
     );
 

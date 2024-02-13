@@ -55,8 +55,8 @@ section {
     /* font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;  */
   }
 
-#svgTitle{
-    margin-top: 140px;
+.svgTitle{
+    margin-top: 100px;
     color: #0d610c;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

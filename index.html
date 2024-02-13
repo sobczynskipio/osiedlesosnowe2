@@ -46,7 +46,7 @@
     <!-- Snow -->
     <script src="js/jquery.flurry.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/agency-v0010.js"></script>
+    <script src="js/agency-v0011.js"></script>
     <script src="js/anim.js"></script>
 
     <!-- MA5 Slider-->
@@ -217,11 +217,11 @@
             <polygon id="house01" class="wholePlace placeWaiting" points="45 900, 80 870, 265 808, 320 900, 320 970, 320 970, 130 1045, 65 975">UNAVAILABLE</polygon>
             <polygon id="house01" class="wholePlace placeWaiting" points="500 750, 550 718, 685 673, 740 750, 740 815, 600 870, 510 815">UNAVAILABLE</polygon>
 
-            <polygon id="house1" class="wholePlace placeWaiting" onClick="selectHouse('1')" points="905 640, 1075 578, 1125 600, 1125 670, 970 732, 905 700">UNAVAILABLE</polygon>
-            <polygon id="house2" class="wholePlace placeFree" onClick="selectHouse('2')" points="1230 520, 1360 473, 1415 495, 1415 552, 1290 600, 1230 582">2;4</polygon>
-            <polygon id="house3" class="wholePlace placeFree" onClick="selectHouse('3')" points="1482 427, 1600 390, 1638 400, 1635 460, 1535 502, 1482 485">2;4</polygon>
-            <polygon id="house4" class="wholePlace placeFree" onClick="selectHouse('4')" points="1685 355, 1775 325, 1818 332, 1815 388, 1735 420, 1682 405">2;4</polygon>
-            <polygon id="house4" class="wholePlace placeFree" onClick="selectHouse('5')" points="1848 295, 1925 270, 1963 283, 1960 328, 1900 352, 1848 340">2;4</polygon>
+            <polygon id="house1" class="wholePlace placeWaiting" points="905 640, 1075 578, 1125 600, 1125 670, 970 732, 905 700">UNAVAILABLE</polygon>
+            <polygon id="house2" class="wholePlace placeFree" onClick="selectHouse('1', '52;120;399 000;free_52;120;399 000;free_52;50;399 000;free_52;50;399 000;free')" points="1230 520, 1360 473, 1415 495, 1415 552, 1290 600, 1230 582">4;4</polygon>
+            <polygon id="house3" class="wholePlace placeFree" onClick="selectHouse('2', '52;120;399 000;free_52;120;399 000;free_52;50;399 000;free_52;50;399 000;free')" points="1482 427, 1600 390, 1638 400, 1635 460, 1535 502, 1482 485">4;4</polygon>
+            <polygon id="house4" class="wholePlace placeFree" onClick="selectHouse('3', '52;120;399 000;free_52;120;399 000;free_52;50;399 000;free_52;50;399 000;free')" points="1685 355, 1775 325, 1818 332, 1815 388, 1735 420, 1682 405">4;4</polygon>
+            <polygon id="house4" class="wholePlace placeFree" onClick="selectHouse('4', '52;120;399 000;free_52;120;399 000;free_52;50;399 000;free_52;50;399 000;free')" points="1848 295, 1925 270, 1963 283, 1960 328, 1900 352, 1848 340">4;4</polygon>
 
             <foreignobject id="WHOLE_HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="500" height="300">
                 <div id="WHOLE_HOUSE_DESCR" class="house_descr">
@@ -1062,7 +1062,7 @@
 <script src="js/contact_me.js"></script>
 
 <script>
-    var pt = document.getElementById("svg0").createSVGPoint();  // Created once for document
+    /*var pt = document.getElementById("svg0").createSVGPoint();  // Created once for document
 
     function alert_coords(evt) {
         pt.x = evt.clientX;
@@ -1071,7 +1071,7 @@
         // The cursor point, translated into svg coordinates
         var cursorpt = pt.matrixTransform(svg.getScreenCTM().inverse());
         console.log("(" + cursorpt.x + ", " + cursorpt.y + ")");
-    }
+    }*/
 </script>
 
 </body>

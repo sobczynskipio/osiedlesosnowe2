@@ -98,18 +98,6 @@ $( document ).ready(function() {
           $("#osiedle_lg").css("display", "none")
           $("#osiedle_sm").css("display", "block")
       }
-
-    /*if ($("#mainNav").offset().top > 100 || window.innerWidth < 992) {
-      	$("#mainNav").addClass("navbar-shrink");
-		$("#logoHeader").css("display","none");
-		$("#logoShrink").css("display","block");
-		$(".fa, .fa-facebook-square").css("color","white");
-    } else {
-        $("#mainNav").removeClass("navbar-shrink");
-		$("#logoHeader").css("display","block");
-		$("#logoShrink").css("display","none");
-		$(".fa, .fa-facebook-square").css("color","white");
-    }*/
   };
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
@@ -199,12 +187,23 @@ function showCatalog(projectionFile){
     window.open(window.location.href + "catalogs/"+projectionFile);
 }
 
-function selectHouse(houseNumber){
+function selectHouse(houseNumber, houseContent){
     $('#svgTitle').html("BUDYNEK NR "+houseNumber);
     //$('body').scrollTo('#svg1'); // Scroll screen to target element
     $([document.documentElement, document.body]).animate({
             scrollTop: $("#svg1").offset().top
         }, 1000);
+
+    let houseContentInfo = houseContent.split("_");
+    for(let i=0; i<4; i++){
+        let apartmentPolygon = $('#place' + (i + 1))
+        apartmentPolygon.html(houseContentInfo[i]);
+        if(houseContentInfo[i].includes('free')){
+            apartmentPolygon.attr('class','place placeFree');
+        }else{
+            apartmentPolygon.attr('class','place placeBooked');
+        }
+    }
 }
 
 function dismissModal(){

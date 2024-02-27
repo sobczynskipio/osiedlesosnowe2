@@ -16,7 +16,7 @@ $( document ).ready(function() {
             }else {
                 $(".house_descr").css("width", "400px")
                 $("#WHOLE_HOUSE_DESCR_FOREIGNOBJECT").css("width", "500px")
-                $('#WHOLE_FREE').html(house_info[0] + "/" + house_info[1]);
+                $('#WHOLE_FREE').html(house_info[0] + "/" + house_info[1] + " (bud. " + house_info[2] + ")");
             }
         },
         function() {

@@ -44,13 +44,12 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 0;
-    margin-bottom: 40px; }
+    }
   section h3.section-subheading {
     font-size: 16px;
      color: black;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 60px;
     text-transform: none;
     /* font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;  */
   }

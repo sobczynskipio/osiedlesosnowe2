@@ -45,7 +45,7 @@
     <!-- Snow -->
     <script src="js/jquery.flurry.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/agency-v0013.js"></script>
+    <script src="js/agency-v0014.js"></script>
     <script src="js/anim.js"></script>
 
     <!-- MA5 Slider-->
@@ -339,33 +339,35 @@
         <svg viewBox="0 0 2000 1429">
             <image id="svg0" xlink:href="img/rzut_osiedla1.jpg" width="2000" height="1429"></image>
 
-            <polygon id="house01" class="wholePlace placeWaiting" points="45 900, 80 870, 265 808, 320 900, 320 970, 320 970, 130 1045, 65 975">UNAVAILABLE</polygon>
-            <polygon id="house02" class="wholePlace placeWaiting" points="500 750, 550 718, 685 673, 740 750, 740 815, 600 870, 510 815">UNAVAILABLE</polygon>
+            <polygon id="house01" onclick="scrollToTable()" class="wholePlace placeWaiting" points="45 900, 80 870, 265 808, 320 900, 320 970, 320 970, 130 1045, 65 975">UNAVAILABLE</polygon>
+            <polygon id="house02" onclick="scrollToTable()" class="wholePlace placeWaiting" points="500 750, 550 718, 685 673, 740 750, 740 815, 600 870, 510 815">UNAVAILABLE</polygon>
 
-            <polygon id="house11" class="wholePlace placeFree" points="905 640, 990 610, 1015 605, 1057 645, 1057 705, 980 737, 907 700">2;2;13</polygon>
-            <polygon id="house12" class="wholePlace placeFree" points="990 610, 1075 578, 1125 600, 1125 677, 1057 705, 1057 645, 1015 605">2;2;14</polygon>
+            <polygon id="house11" onclick="scrollToTable()" class="wholePlace placeFree" points="905 640, 990 610, 1015 605, 1057 645, 1057 705, 980 737, 907 700">2;2;13</polygon>
+            <polygon id="house12" onclick="scrollToTable()" class="wholePlace placeFree" points="990 610, 1075 578, 1125 600, 1125 677, 1057 705, 1057 645, 1015 605">2;2;14</polygon>
 
 
-            <polygon id="house2" class="wholePlace placeFree" points="1230 520, 1320 487, 1365 520, 1365 580, 1300 605, 1230 580">2;2;15</polygon>
-            <polygon id="house2" class="wholePlace placeFree" points="1320 487, 1360 473, 1415 495, 1415 559, 1365 580, 1365 520">2;2;16</polygon>
+            <polygon id="house2" onclick="scrollToTable()" class="wholePlace placeFree" points="1230 520, 1320 487, 1365 520, 1365 580, 1300 605, 1230 580">2;2;15</polygon>
+            <polygon id="house2" onclick="scrollToTable()" class="wholePlace placeFree" points="1320 487, 1360 473, 1415 495, 1415 559, 1365 580, 1365 520">2;2;16</polygon>
 
-            <polygon id="house3" class="wholePlace placeFree" points="1482 427, 1560 403, 1600 432, 1596 485, 1550 502, 1480 480">1;2;17</polygon>
-            <polygon id="house3" class="wholePlace placeFree" points="1560 403, 1600 393, 1638 403, 1635 468, 1596 485, 1600 432">1;2;18</polygon>
+            <polygon id="house3" onclick="scrollToTable()" class="wholePlace placeFree" points="1482 427, 1560 403, 1600 432, 1596 485, 1550 502, 1480 480">1;2;17</polygon>
+            <polygon id="house3" onclick="scrollToTable()" class="wholePlace placeFree" points="1560 403, 1600 393, 1638 403, 1635 468, 1596 485, 1600 432">1;2;18</polygon>
 
-            <polygon id="house4" class="wholePlace placeFree" points="1685 355, 1755 333, 1783 352, 1780 407, 1743 421, 1682 405">2;2;19</polygon>
-            <polygon id="house4" class="wholePlace placeFree" points="1755 333, 1775 325, 1818 334, 1815 392, 1780 407, 1783 352">2;2;20</polygon>
+            <polygon id="house4" onclick="scrollToTable()" class="wholePlace placeFree" points="1685 355, 1755 333, 1783 352, 1780 407, 1743 421, 1682 405">2;2;19</polygon>
+            <polygon id="house4" onclick="scrollToTable()" class="wholePlace placeFree" points="1755 333, 1775 325, 1818 334, 1815 392, 1780 407, 1783 352">2;2;20</polygon>
 
-            <polygon id="house4" class="wholePlace placeFree" points="1848 295, 1905 275, 1936 295, 1933 345, 1908 355, 1845 340">2;2;21</polygon>
-            <polygon id="house4" class="wholePlace placeFree" points="1905 275, 1925 270, 1963 283, 1960 333, 1933 345, 1936 295">2;2;22</polygon>
+            <polygon id="house4" onclick="scrollToTable()" class="wholePlace placeFree" points="1848 295, 1905 275, 1936 295, 1933 345, 1908 355, 1845 340">2;2;21</polygon>
+            <polygon id="house4" onclick="scrollToTable()" class="wholePlace placeFree" points="1905 275, 1925 270, 1963 283, 1960 333, 1933 345, 1936 295">2;2;22</polygon>
 
-            <foreignobject id="WHOLE_HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="500" height="300">
+            <foreignobject id="WHOLE_HOUSE_DESCR_FOREIGNOBJECT" class="node" x="100" y="100" width="400" height="300">
                 <div id="WHOLE_HOUSE_DESCR" class="house_descr">
-                    <div>Wolne mieszkania: <b><span id="WHOLE_FREE" style="margin-left: 60px;"></span></b></div>
+                    <div><b><span id="WHOLE_FREE" style="margin-left: 60px;"></span></b></div>
+                    <div><span id="LOK_1" style="margin-left: 60px;"></span></div>
+                    <div><span id="LOK_2" style="margin-left: 60px;"></span></div>
                 </div>
             </foreignobject>
         </svg>
 
-        <div class="row" style="margin-top:60px; margin-bottom:40px">
+        <div id="AVAILABILITY_TABLE" class="row" style="margin-top:60px; margin-bottom:40px">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase block animatable bounceIn">Lista mieszkań</h2>
             </div>

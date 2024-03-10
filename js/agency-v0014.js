@@ -1,3 +1,9 @@
+function scrollToTable(){
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#AVAILABILITY_TABLE").offset().top
+    }, 1000);
+}
+
 $( document ).ready(function() {
 
     if(window.innerWidth >= 992){
@@ -10,13 +16,19 @@ $( document ).ready(function() {
             $('#WHOLE_HOUSE_DESCR').css("display","block");
             let house_info = $( this ).html().split(";");
             if(house_info.length < 2){
-                $(".house_descr").css("width", "600px")
-                $("#WHOLE_HOUSE_DESCR_FOREIGNOBJECT").css("width", "600px")
-                $('#WHOLE_FREE').html("Informacje wkrótce");
-            }else {
                 $(".house_descr").css("width", "400px")
-                $("#WHOLE_HOUSE_DESCR_FOREIGNOBJECT").css("width", "500px")
-                $('#WHOLE_FREE').html(house_info[0] + "/" + house_info[1] + " (bud. " + house_info[2] + ")");
+                //$("#WHOLE_HOUSE_DESCR_FOREIGNOBJECT").css("width", "400px")
+                $('#WHOLE_FREE').html("Informacje wkrótce");
+                $('#LOK_1').css("display","none");
+                $('#LOK_2').css("display","none");
+            }else {
+                $(".house_descr").css("width", "300px")
+                //$("#WHOLE_HOUSE_DESCR_FOREIGNOBJECT").css("width", "400px")
+                $('#WHOLE_FREE').html("Budynek " + house_info[2] + "");
+                $('#LOK_1').html("Lokal  " + house_info[2] + " A");
+                $('#LOK_2').html("Lokal " + house_info[2] + " B");
+                $('#LOK_1').css("display","block");
+                $('#LOK_2').css("display","block");
             }
         },
         function() {

@@ -275,14 +275,9 @@ body {
     text-transform: none;
   }
   
-  #portfolio{
-    background-image: url('../img/tlo_about.png');
-  }
-
   #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
-
   }
 
   #portfolio .portfolio-item .portfolio-link {

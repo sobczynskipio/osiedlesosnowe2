@@ -264,6 +264,10 @@ p.justyfied{
     display: none;
 }
 
+#wykonczenie_sm{
+    display: none;
+}
+
 .house_descr{
     background-color: white;
     padding: 20px;

@@ -103,12 +103,14 @@ $( document ).ready(function() {
           $(".full-overlay-image").css("width", "50%")
           $(".full-overlay-image").css("left", "25%")
           $("#osiedle_lg").css("display", "block")
+          $("#wykonczenie_lg").css("display", "block")
           $("#osiedle_sm").css("display", "none")
+          $("#wykonczenie_sm").css("display", "none")
       }else{
           $(".full-overlay-image").css("width", "80%")
           $(".full-overlay-image").css("left", "10%")
-          $("#osiedle_lg").css("display", "none")
-          $("#osiedle_sm").css("display", "block")
+          $("#wykonczenie_lg").css("display", "none")
+          $("#wykonczenie_sm").css("display", "block")
       }
   };
   // Collapse the navbar when page is scrolled

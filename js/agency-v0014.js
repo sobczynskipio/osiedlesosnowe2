@@ -6,8 +6,18 @@ function scrollToTable(){
 
 $( document ).ready(function() {
 
+    console.log("inner width " + window.innerWidth)
+    if(window.innerWidth > 1400){
+        $(".hidden-on-mobile").css("display", "block")
+    } else {
+        $(".hidden-on-mobile").css("display", "none")
+    }
+
     if(window.innerWidth >= 992){
+        $(".hidden-on-mobile").css("display", "block")
         initializeGalleryImages();
+    } else {
+        $(".hidden-on-mobile").css("display", "none")
     }
     initializeSchemaImages();
 
